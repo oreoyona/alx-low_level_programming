@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * main function is a Simple program to write to std out a message
+ * main - function is a Simple program to write to std out a message
  * Return: 0 if the program runs without errors
 */
 int main(void)
