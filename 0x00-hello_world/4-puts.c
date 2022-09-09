@@ -5,7 +5,10 @@
 */
 
 int main(void)
-{
+/*                                                                                                                                     
+ *A Simple program to write to std out a message                                                                                       
+ */ 
+{ 
   char str[52];
   strcpy(str, "Programming is like building a multilingual puzzle\n");
   puts(str);
