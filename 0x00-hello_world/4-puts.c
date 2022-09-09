@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 /**
  * main - function is a Simple program to write to std out a message
@@ -7,8 +6,6 @@
 */
 int main(void)
 {
-	char str1[52];
-       	strcpy(str1, "Programming is like building a multilingual puzzle\n");
-	puts(str1);
+	puts("\"Programming is like building a multilingual puzzle\n");
 	return (0);
 }
