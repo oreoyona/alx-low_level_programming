@@ -3,7 +3,7 @@
 /**
  * main - this a main function
  * print a simple message
- * Return zero
+ * Return: 0 if there is zero
  */
 int main(void)
 {
