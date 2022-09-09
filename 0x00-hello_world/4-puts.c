@@ -6,7 +6,7 @@
  * Return: 0 if the program runs without errors
 */
 
-int main(void) 
+int main (void) 
 {
 	char str[52];
 	strcpy(str, "Programming is like building a multilingual puzzle\n");
