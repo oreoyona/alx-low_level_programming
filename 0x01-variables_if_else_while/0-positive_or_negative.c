@@ -4,7 +4,7 @@
 /**
  * main - function that determines wether a number is negative or not
  * Return: 0 if the program succeeds
-*/
+ */
 int main(void)
 {
 	int n;
