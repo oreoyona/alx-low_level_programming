@@ -2,20 +2,21 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - function that determines wether a number is negative or not
- * Return: 0 if the program succeeds
- */
+* main - the main function determine wether or no
+* a number is positive or not or is just 0
+* Return: 0 if if the program succeds
+*/
 int main(void)
 {
 	int n;
-	
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n < 0)
-		printf("%d is negative\n", n);
-	else if (n > 0)
-		printf("%d is positive\n", n);
+
+	srand(time(0))
+	n = road() - RAND_MAX / 2
+	if (n<0)
+	printf("%d is negative\n", n);
+	else if (n == 0)
+	printf("%d is zero\n", n);
 	else
-		printf("%d is zero\n", n);
-	return (0);
+	printf("%d is positive", n);
+
 }
