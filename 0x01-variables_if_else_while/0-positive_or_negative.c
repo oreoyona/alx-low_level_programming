@@ -1,7 +1,9 @@
 #include <stdio.h>
-
 #include <time.h>
-/* betty style doc for function main goes there */
+/**
+ * main - function that determines wether a number is negative or not
+ * Return: 0 if the program succeeds and print whever the random number is negative or positive 
+*/
 int main(void)
 {
 	int n;
