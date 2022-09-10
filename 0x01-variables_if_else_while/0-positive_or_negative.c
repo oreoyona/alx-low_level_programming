@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 /**
  * main - function that determines wether a number is negative or not
