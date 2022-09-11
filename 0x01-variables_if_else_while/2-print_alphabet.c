@@ -8,12 +8,9 @@
 int main(void)
 {
 	char alphabet[26] = "abcdefghijklmnopqrstuvwxyz";
-	int ch, i, n = 0;
+	int i = 0;
 
-	while((ch = getchar()) != EOF && n < 100)
-		alphabet[n++] = ch;
-	
-	for(i = 0; i < n ; ++i)
+	for (i = 0; i < 26 ; ++i)
 		putchar(alphabet[i]);
 	putchar('\n');
 	return (0);
