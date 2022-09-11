@@ -10,9 +10,9 @@ int main(void)
 	char alphaBET[26] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	int i = 0;
 
-	for(i = 0; i < 26; ++i)
+	for (i = 0; i < 26; ++i)
 		putchar(alphabet[i]);
-	for(i = 0; i < 26; ++i)
+	for (i = 0; i < 26; ++i)
 		putchar(alphaBET[i]);
 	putchar('\n');
 	return (0);
