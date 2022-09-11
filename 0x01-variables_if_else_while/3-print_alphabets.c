@@ -14,6 +14,6 @@ int main(void)
 		putchar(alphabet[i]);
 	for(i = 0; i < 26; ++i)
 		putchar(alphaBET[i]);
-	putchar("/n");
+	putchar('\n');
 	return (0);
 }
