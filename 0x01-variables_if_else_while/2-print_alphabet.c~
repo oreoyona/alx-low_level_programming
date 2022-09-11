@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * main - the function print out the alphabet
+ * Return: 0 if the program runs successfully
+ */
+int main(void)
+{
+	
+	return (0);
+}
