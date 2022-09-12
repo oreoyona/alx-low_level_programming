@@ -6,13 +6,15 @@
  */
 int main(void)
 {
-	char alphabet[26] = "012356789abcdef";
+	char ltr;
 	int i = 0;
 
-	for (i = 0; i < 16; i++)
+	for (i = 0; i < 10; i++)
 	{
-		putchar(alphabet[i]);
+		putchar((i % 10) + '0');
 	}
+	for (ltr = 'a'; ltr < 'f'; ltr++)
+		putchar(ltr);
 	putchar('\n');
 	return (0);
 }
