@@ -1,4 +1,3 @@
-
 /**
  * print_alphabet - print the alphabet in lower_case
  * Return:0 upon success, 1 otherwise
@@ -13,4 +12,3 @@ void print_alphabet(void)
 	}
 	putchar('\n');
 }
-#include "main.h"
