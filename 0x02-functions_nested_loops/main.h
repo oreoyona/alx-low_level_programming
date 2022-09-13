@@ -6,3 +6,4 @@
  * Return: On success 1
  * On error, -1 is returne and errno is set appropriately.
  */
+void print_alphabet(void);
