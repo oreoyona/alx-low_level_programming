@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <main.h>
 /**
  * main - prints a string to stdo
@@ -6,6 +5,13 @@
  */
 int main(void)
 {
-	printf("_putchar");
+	char word[7] = "_putchar";
+	int i = 0;
+
+	for (i = 0; i < 7; i++)
+	{
+		putchar(word[i]);
+	}
+	putchar('\n');
 	return (0);
 }
