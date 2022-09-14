@@ -8,16 +8,15 @@
  */
 int _islower(int c)
 {
-	char letter;
+	int letter;
+	int code = 0;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
+	for (letter = 97; letter <= 122; letter++)
 	{
 		if (c == letter)
 		{
-			return (1);
+			code = 1;
 		}
-		else
-			return (0);
 	}
-	return (0);
+	return (code);
 }
