@@ -1,5 +1,5 @@
 #include "main.h"
-#include <math.h>
+
 /**
  * _abs - prints the absolute value of a number
  * @n: the number to be computed
@@ -7,8 +7,7 @@
  */
 int _abs(int n)
 {
-	int db = n * n;
-	int rc = sqrt(db);
-
-	return rc;
+	if (n < 0)
+		n = -n;
+	return n;
 }
