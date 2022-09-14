@@ -12,7 +12,10 @@ int print_last_digit(int n)
 	{
 		n = -n;
 	}
-	ld = -(n % 10);
+	else if ( n == - 2147483648)
+		ld = -(n % 10);
+	else
+		ld = n % 10;
 	_putchar(ld + '0');
 	return (ld);
 }
