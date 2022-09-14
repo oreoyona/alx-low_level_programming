@@ -14,7 +14,7 @@ void jack_bauer(void)
 		{
 			if ( x < 9 || y < 9)
 			{
-				printf("0%d:0%d", x, y);
+				_putchar(
 				_putchar('\n');
 			}
 			printf("%d:%d", x, y);
