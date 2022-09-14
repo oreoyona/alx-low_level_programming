@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * jack_bauer - prints hours 
  * Return: void. only prints the jack bauer hours
@@ -13,16 +14,10 @@ void jack_bauer(void)
 		{
 			if ( x < 9 || y < 9)
 			{
-				_putchar('0');
-				_putchar(x);
-				_putchar(':');
-				_putchar('0');
-				_putchar(y);
+				printf("0%d:0%d", x, y);
 				_putchar('\n');
 			}
-			_putchar(x);
-			_putchar(':');
-			_putchar(y);
+			printf("%d:%d", x, y);
 			_putchar('\n');
 		}
 	}
