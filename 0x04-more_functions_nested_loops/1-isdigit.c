@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _isdigit - tests wether a given cher is a digit
  * @c: thechar to be tested
