@@ -8,6 +8,7 @@
 void print_diagonal(int n)
 {
 	int count = 0;
+	int count2 = 0;
 
 	if (n <= 0)
 		_putchar('\n');
@@ -15,10 +16,15 @@ void print_diagonal(int n)
 	{
 		while (count < n)
 		{
+			while (count2 < count)
+			{
+				_putchar(' ');
+				count2++;
+			}
 			count++;
-			_putchar('\');
-			_putchar('\t');
+			count2 = 0;
+			_putchar(92);
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
