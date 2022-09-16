@@ -18,6 +18,5 @@ int _isupper(int c)
 			code = 1;
 		}
 	}
-      
 	return (code);
 }
