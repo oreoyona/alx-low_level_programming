@@ -10,13 +10,10 @@ int print_line(int n)
 	int count = 0;
 
 	if (n <= 0)
-		putchar('');
-	else
+		return;
+	while (count < n)
 	{
-		while (count < n)
-		{
-			count++;
-			_putchar('_');
-		}
+		count++;
+		_putchar('_');
 	}
 }
