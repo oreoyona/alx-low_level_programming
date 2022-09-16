@@ -16,6 +16,5 @@ int _isupper(int c)
 		if (c == i)
 			code = 1;
 	}
-
 	return (code);
 }
