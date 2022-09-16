@@ -8,7 +8,7 @@
  */
 int _isupper(int c)
 {
-	int i = 0;
+	int i;
 	int code = 0;
 	
 	for (i = 'A';  i <= 'Z'; i++)
