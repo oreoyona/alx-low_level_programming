@@ -10,11 +10,11 @@ void print_square(int size)
 	int count = 0;
 	int count2 = 0;
 
-	if (n <= 0)
+	if (size <= 0)
 		_putchar('\n');
 	else
 	{
-		while (count < n)
+		while (count < size)
 		{
 			while (count2 < count)
 			{
