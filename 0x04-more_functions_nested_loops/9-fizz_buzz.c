@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
@@ -8,16 +7,36 @@
  */
 void fizzbuzz(void)
 {
-	int x = 0;
+	int x = 1;
 
-	for (x = 0; x < 100; x++)
+	for (x = 1; x < 100; x++)
 	{
 		if (x % 3 == 0)
-			printf("Fizz");
+		{
+			printf("Fizz ");
+			continue;
+		}
 		else if (x % 5 == 0)
-			printf("Buzz");
+		{
+			printf("Buzz ");
+			continue;
+		}
 		else if (x % 3 == 0 && x % 5 == 0)
-			printf("FizzBuzz");
-		printf("%d", x);
+		{
+			printf("FizzBuzz ");
+			continue;
+		}
+		printf("%d ", x);
 	}
+	printf("\n");
+}
+
+/**
+ * main - call the fizzbuzz function
+ * Return 0 upon success
+ */
+int main(void)
+{
+	fizzbuzz();
+	return (0);
 }
