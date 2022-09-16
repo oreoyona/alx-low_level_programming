@@ -5,7 +5,7 @@
  * @n: the number of line to be printed
  * Return: void
  */
-int print_line(int n)
+void print_line(int n)
 {
 	int count = 0;
 
