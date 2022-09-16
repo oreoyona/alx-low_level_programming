@@ -13,20 +13,20 @@ void fizzbuzz(void)
 	{
 		if (x % 3 == 0 && x % 5 != 0)
 		{
-			printf(" Fizz ");
+			printf("Fizz ");
 			continue;
 		}
 		else if (x % 5 == 0 && x % 3 != 0)
 		{
-			printf(" Buzz ");
+			printf("Buzz ");
 			continue;
 		}
 		else if (x % 3 == 0 && x % 5 == 0)
 		{
-			printf(" FizzBuzz ");
+			printf("FizzBuzz ");
 			continue;
 		}
-		printf("%d ", x);
+		printf(" %d ", x);
 	}
 	printf("\n");
 }
