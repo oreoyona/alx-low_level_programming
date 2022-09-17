@@ -1,6 +1,7 @@
-#include <unistd.h>
-/**
- * contans all the prototypes
- */
+#ifndef MAIN_H
+#define MAIN_H
 
-void positive_or_negative(int i);
+#include <stdio.h>
+void positive_or_negative(int c);
+
+#endif /* MAIN_H */
