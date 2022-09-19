@@ -1,0 +1,1 @@
+This directory contains some exercises to help you learn pointers in c
