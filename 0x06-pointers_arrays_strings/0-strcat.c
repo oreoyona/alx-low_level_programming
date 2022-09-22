@@ -3,22 +3,23 @@
  * _strcat - joins 2 strings
  * @dest: the first string
  * @src: the second string
+ * Return: a new string
  */
 char *_strcat(char *dest, char *src)
 {
-	int x = 0;
-	int y = 0;
+	int i;
+	char *string1;
 
-	while (dest[x] != '\0')
-		x++;
-
-	while (src[y] != '\0')
+	for (i = 0; i <= dest[i]; i++)
 	{
-		dest[x] == src[y];
-		x++;
-		y++;
 	}
+	string1 = dest + i;
 
-	dest[x] = '\0';
+	while (*src != '\0')
+	{
+		*string1++ = *src++;
+	}
+	*string1 = '\0';
+
 	return (dest);
 }
