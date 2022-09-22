@@ -13,7 +13,7 @@ char *_strcat(char *dest, char *src)
 	{
 	}
 	string1 = dest + i;
-	
+
 	while (*src != '\0')
 	{
 		*string1++ = *src++;
