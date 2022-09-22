@@ -9,7 +9,7 @@ char *_strcat(char *dest, char *src)
 	int i;
 	char *string1;
 
-	for (i = 0; i < dest[i]; i++)
+	for (i = 0; i <= dest[i]; i++)
 	{
 	}
 	string1 = dest + i;
