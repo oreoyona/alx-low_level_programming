@@ -7,21 +7,13 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	char *pString = dest;
+	int count;
 
-	if (n <= 0)
+	for (count = 0; count < n && src[count] != '\0'; i++)
 	{
-		return (0);
+		dest[count] = src[count];
 	}
-	else
-	{
-		while (*src && n--)
-		{
-			*dest = *src;
-			dest++;
-			src++;
-		}
-	*dest = '\0';
-	return (pString);
-	}
+	for (; count < n; count++)
+		dest[count] = '\0';
+	return (dest);
 }
