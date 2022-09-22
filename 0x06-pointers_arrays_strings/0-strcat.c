@@ -8,25 +8,16 @@ char *_strcat(char *dest, char *src)
 {
 	int i;
 
-	for (i = 0; i < *dest[i]; i++)
+	for (i = 0; i < dest[i]; i++)
 	{
 	}
-	char string1[i] = *dest;
-	int l;
+	char * string1 = dest + i;
 
-	for (l = 0; l < *src[l]; l++)
+	while (*src != '\0')
 	{
+		*string1++ = *src++;
 	}
-	char string2[l] = *src;
-	int x;
-	char y[l + i];
+	*string1 = '\0';
 
-	for (x = 0; x < l + 1; x++)
-	{
-		y += string2[x];
-	}
-
-	char *concat = &y;
-
-	return (concat);
+	return (dest);
 }
