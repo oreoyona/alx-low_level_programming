@@ -1,0 +1,1 @@
+This repo contains basic functions I wrote to learn C
