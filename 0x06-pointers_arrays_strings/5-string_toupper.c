@@ -4,7 +4,7 @@
  * @s: the string we will work on
  * Return: a pointer
  */
-char *string_touppe(char *s)
+char *string_toupper(char *s)
 {
 	int i;
 
