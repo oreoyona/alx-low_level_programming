@@ -9,9 +9,9 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	char *pString = dest;
 
-	if (dest == NULL)
+	if (dest <= 0)
 	{
-		return (NULL);
+		return (0);
 	}
 	while (*src && n--)
 	{
