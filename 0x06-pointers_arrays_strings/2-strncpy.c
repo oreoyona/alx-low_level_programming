@@ -9,7 +9,7 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int i, l = 0;
 
-	while(a != n)
+	while(i != n)
 	{
 		dest[l] = src[i];
 		l++;
