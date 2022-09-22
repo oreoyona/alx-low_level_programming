@@ -9,16 +9,19 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	char *pString = dest;
 
-	if (dest <= 0)
+	if (n <= 0)
 	{
 		return (0);
 	}
-	while (*src && n--)
+	else
 	{
-		*dest = *src;
-		dest++;
-		src++;
-	}
+		while (*src && n--)
+		{
+			*dest = *src;
+			dest++;
+			src++;
+		}
 	*dest = '\0';
 	return (pString);
+	}
 }
