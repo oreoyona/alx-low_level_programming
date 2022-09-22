@@ -7,17 +7,18 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i, l = 0;
+	char *pString = dest;
 
-	while (i != n)
+	if (dest == NULL)
 	{
-		dest[l] = src[i];
-		l++;
-		i++;
-		if (src[i] == '\0')
-			break;
+		return (NULL);
 	}
-	while (l != n)
-		dest[l++] = '\0';
-	return (dest);
+	while (*src && n--)
+	{
+		*dest = *src;
+		dest++;
+		src++;
+	}
+	*dest = '\0';
+	return (pString);
 }
