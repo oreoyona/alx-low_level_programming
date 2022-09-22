@@ -4,6 +4,7 @@
  * @dest: the first string
  * @src: the second string
  * @n: the number of byte
+ * Return: a new string
  */
 char *_strncat(char *dest, char *src, int n)
 {
