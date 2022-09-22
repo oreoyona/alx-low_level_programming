@@ -1,0 +1,17 @@
+#include "main.h"
+/**
+ * string_touppe - changes to lc
+ * @s: the string we will work on
+ * Return: a pointer
+ */
+char *string_touppe(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (s[i] <= 'z' && s[i] >= 'a')
+			str[i] = -32;
+	}
+	return (s);
+}
