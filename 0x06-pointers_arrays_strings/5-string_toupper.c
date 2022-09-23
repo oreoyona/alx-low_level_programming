@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * string_touppe - changes to lc
+ * string_toupper - changes to lc
  * @s: the string we will work on
  * Return: a pointer
  */
