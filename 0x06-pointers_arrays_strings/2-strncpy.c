@@ -4,6 +4,7 @@
  * @dest: the destination
  * @src: the sourve
  * @n: the limit
+ * Return: the string
  */
 char *_strncpy(char *dest, char *src, int n)
 {
