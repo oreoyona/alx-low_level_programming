@@ -20,5 +20,5 @@ void print_diagsums(int *a, int size)
 		a += size;
 	}
 	printf("%d ", somme);
-	printf("%d ", somme2);
+	printf("%d\n", somme2);
 }
