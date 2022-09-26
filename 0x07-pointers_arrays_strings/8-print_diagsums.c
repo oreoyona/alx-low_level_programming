@@ -9,13 +9,15 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int x, somme = 0, somme2 = 0;
+	int x = 0;
+	int somme = 0;
+	int somme2 = 0;
 
 	for (x = 0; x < size; x++)
 	{
-		somme += a[x];
-		somme2 += a[size - x - 1];
-		a += size;
+		somme =+ a[x];
+		somme2 =+ a[size - x - 1];
+		a =+ size;
 	}
 	printf("%d ", somme);
 	printf("%d\n", somme2);
