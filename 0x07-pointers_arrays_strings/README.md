@@ -1,0 +1,1 @@
+A repo that contains some functions I wrote for the ALX program to learn the C language
