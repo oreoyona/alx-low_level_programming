@@ -19,7 +19,6 @@ char *_strpbrk(char *s, char *accept)
 		z = 0;
 		if (y == 1)
 			return (s + x);
-		x++;
 	}
 	return (0);
 }
