@@ -8,11 +8,11 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int x;
-	char * y;
+	char *y;
 
 	for (x = 0; *s; s++, x++)
 	{
-		for (y = accept; *y && *p != *s; y++)
+		for (y = accept; *y && *y != *s; y++)
 		{
 		}
 		if (!*y)
