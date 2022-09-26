@@ -11,6 +11,8 @@ char *_strpbrk(char *s, char *accept)
 	int y;
 	int z;
 
+	x = 0;
+
 	for (x = 0; s[x] != '\0'; x++)
 	{
 		for (; accept[z] != '\0'; z++)
