@@ -9,12 +9,9 @@
  */
 int main(int argc, char *argv[])
 {
-	int x = 0;
+	char name[] = *argv[0];
 
-	while (*argv[x] != '\0')
-	{
-		x++;
-	}
-	printf("%d\n", argc);
-	return (argc);
+	if (sizeof name > 0)
+		printf("%d\n", argc);
+	return (0);
 }
