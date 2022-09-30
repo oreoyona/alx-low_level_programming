@@ -9,13 +9,12 @@
  */
 int main(int argc, char *argv[])
 {
-	unsigned long a = (unsigned long) argv[0];
-	unsigned long b = (unsigned long) argv[1];
-	unsigned long y = (unsigned long) argc;
+	unsigned int a = (unsigned int) *argv[0];
+	unsigned int b = (unsigned int) *argv[1];
 
-	if (y == 1)
+	if (argc == 1)
 		printf("%s\n", "Error");
 	else
-		printf("%ld\n", a * b);
+		printf("%d\n", a * b);
 	return (0);
 }
