@@ -10,8 +10,9 @@
 int main(int argc, char *argv[])
 {
 	unsigned long x;
+	unsigned long y = (unsigned long) argc;
 
-	for (x = 0; x < argc; x++)
+	for (x = 0; x < y; x++)
 		printf("%s\n", argv[x]);
 	return (0);
 }
