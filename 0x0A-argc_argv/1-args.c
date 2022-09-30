@@ -9,9 +9,10 @@
  */
 int main(int argc, char *argv[])
 {
-	char name[] = *argv[0];
+	unsigned long x;
 
-	if (sizeof name > 0)
-		printf("%d\n", argc);
+	for (x = 1; x < sizeof(argv[x]); x++)
+		continue;
+	printf("%d\n", argc);
 	return (0);
 }
