@@ -13,6 +13,8 @@ int main(int argc, char *argv[])
 
 	for (x = 1; x < sizeof(argv[x]); x++)
 		continue;
+	if (argc == 0)
+		printf("%d\n", 0);
 	printf("%d\n", argc);
 	return (0);
 }
