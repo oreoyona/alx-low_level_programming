@@ -16,5 +16,5 @@ int main(int argc, char *argv[])
 		x++;
 	}
 	printf("%d\n", argc);
-	return (0);
+	return (argc);
 }
