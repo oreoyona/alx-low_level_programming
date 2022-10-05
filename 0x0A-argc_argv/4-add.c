@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "main.h"
 #include <stdlib.h>
-#include <ctype.h>
 /**
  * main - add 2 or more positive numbers
  * @argc: number of arguments
