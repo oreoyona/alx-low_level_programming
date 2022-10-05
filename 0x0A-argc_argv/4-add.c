@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 	{
 		for (l = 1; l < argc; l++)
 		{
-			if (atoi(argv[l]) == 0)
+			if (isInteger(argv[l]))
 			{
 				printf("%s\n", "Error");
 				return (1);
