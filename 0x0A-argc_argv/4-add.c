@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int res;
+	int res = 0;
 	int l;
 
 	if (argc == 1)
@@ -19,18 +19,19 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		for (l = 0; l < argc; l++)
+		for (l = 1; l < argc; l++)
 		{
-			if (isdigit(argv[l]) == 0)
-				{
-					printf("%s\n", "Error");
-					return (1);
-				}
+			if (atoi(argv[l]) == 0)
+			{
+				printf("%s\n", "Error");
+				return (1);
+			}
 			else
+			{
 				res += atoi(argv[l]);
+			}
 		}
-		printf("%d\n", res);
 	}
-
+	printf("%d\n", res);
 	return (0);
 }
