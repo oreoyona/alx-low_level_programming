@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * main - multiply 2 numbers
  * @argc: number of arguments
@@ -9,12 +9,15 @@
  */
 int main(int argc, char *argv[])
 {
-	unsigned int a = (unsigned int) *argv[0];
-	unsigned int b = (unsigned int) *argv[1];
-
 	if (argc == 1)
 		printf("%s\n", "Error");
 	else
-		printf("%d\n", a * b);
+	{
+		int x = atoi(argv[1]);
+		int y = atoi(argv[2]);
+
+		printf("%d\n", x * y);
+	}
+
 	return (0);
 }
