@@ -24,7 +24,7 @@ unsigned int siz(char *s)
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int x, y;
+	unsigned int x, y = 0;
 	char *z;
 
 	if (s1 == NULL)
@@ -35,12 +35,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		z = malloc(sizeof(char) * (siz(s1) + n + 1));
 	else
 		z = malloc(sizeof(char) * (siz(s1) + siz(s2) + 1));
-	if (z == 0)
+	if (!z)
 		return (NULL);
 	for (x = 0; s1[x] != '\0'; x++)
-		z[x] = s1[x];
+		z[x] = s1[y++];
 	for (y = 0; s2[y] != '\0'; y++)
-		z[x] = s2[y];
+		z[x--] = s2[y];
 	z[x] = '\0';
 
 	return (z);
