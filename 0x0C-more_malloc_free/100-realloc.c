@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * _memcpy - implementation of the memcpy function
  * @dst: first arg
