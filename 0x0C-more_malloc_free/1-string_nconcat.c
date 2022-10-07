@@ -47,7 +47,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		z[x++] = s2[y++];
 	}
 	while (n >= siz(s2) && x < (siz(s1) + siz(s2)))
-		z[x++] = s2[y++]
+		z[x++] = s2[y++];
 	z[x] = '\0';
 
 	return (z);
