@@ -8,7 +8,7 @@
  */
 unsigned int siz(char *s)
 {
-	unsigned int x = 0;
+	unsigned int x;
 
 	for (x = 0; s[x] != '\0'; x++)
 	{
@@ -16,7 +16,7 @@ unsigned int siz(char *s)
 	return (x);
 }
 /**
- * string_nconcat -  concatenates two strings
+ * string_nconcat - concatenates two strings
  * @s1: the first string
  * @s2: the string that will be adde to s1
  * @n: the size of the memory to alocate
