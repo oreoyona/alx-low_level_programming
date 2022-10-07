@@ -24,7 +24,8 @@ unsigned int siz(char *s)
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int x, y = 0;
+	unsigned int x = 0;
+	unsigned int y = 0;
 	char *z;
 
 	if (s1 == NULL)
