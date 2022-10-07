@@ -8,7 +8,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int x, z;
+	unsigned int x, y, z;
 	unsigned int l;
 	char *a;
 
@@ -20,15 +20,17 @@ char *str_concat(char *s1, char *s2)
 	}
 	a = malloc(sizeof(char) * (x + l + 1));
 
-	for (y = 0; s1[y] != '\0'; y++)
+	if (a == NULL)
+		return (NULL);
+
+	for (y = 0; y < x; y++)
 	{
 		a[y] = s1[y];
 	}
-	for (z = 0; s2[z] != '\0'; l++, z++)
+	for (z = 0; y < x + l; y++, z++)
 	{
-		a[l] = s2[z];
+		a[y] = s2[z];
 	}
-	a[z] = '\0';
-	
+	a[y] = '\0';
 	return (a);
 }
