@@ -32,9 +32,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 	if (n < siz(s2))
-		z = malloc(siz(s2) + n * sizeof(char) + 1);
+		z = malloc(sizeof(char) * (siz(s1) + n + 1));
 	else
-		z = malloc(siz(s1) + siz(s2) + 1);
+		z = malloc(sizeof(char) * (siz(s1) + siz(s2) + 1));
 	if (z == 0)
 		return (NULL);
 	for (x = 0; s1[x] != '\0'; x++)
