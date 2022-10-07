@@ -7,7 +7,7 @@
  * @src: the old mem
  * @x: the size
  * Return: a pointer
- */
+ *
 void *_memcpy(void *dst, const void *src, unsigned int x)
 {
 	char *y = (char *)dst;
@@ -45,7 +45,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 
 	if (ptrNew)
 	{
-		_memcpy(ptrNew, ptr, old_size);
+		//	_memcpy(ptrNew, ptr, old_size);
 		free(ptr);
 	}
 	return (ptrNew);
