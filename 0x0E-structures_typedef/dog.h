@@ -1,4 +1,11 @@
+#ifndef DOG_H
 #define DOG_H
+
+/**
+ * File: dog.h
+ * Auth: Gloire K. Chabu
+ * Desc: A simple desc
+ */
 
 /**
  * struct dog - here we define a dog
@@ -18,3 +25,4 @@ struct dog
 	char *owner;
 };
 void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
