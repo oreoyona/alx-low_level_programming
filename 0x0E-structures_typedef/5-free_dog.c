@@ -8,9 +8,9 @@
  */
 int main(void)
 {
-	dog_t *random_dog;
+	dog_t *gDog;
 
-	gDog = random_dog("Ruby", 7, "Gloire");
+	gDog = new_dog("Ruby", 7, "Gloire");
 	printf("My name is %s, and I am %.1f :) - Woof!\n", gDog->name, gDog->age);
 	return (0);
 }
