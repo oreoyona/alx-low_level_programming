@@ -15,7 +15,7 @@
  * The dog struct describes the elements
  * that must be present to every single dog in our program
  */
-struct dog
+typedef struct dog dog_t
 {
 	char *name;
 	float age;
