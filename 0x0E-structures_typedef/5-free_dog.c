@@ -1,16 +1,19 @@
-#include "dog.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include "dog.h"
 /**
- * main - the main function
- * frees memory using free
- * Return: 0
+ * free_dog - frees memory using free
+ * @d: our ds
+ * Return: void
  */
-int main(void)
+void free_dog(dog_t *d)
 {
-	dog_t *gDog;
-
-	gDog = new_dog("Ruby", 7.1, "Gloire");
-	printf("My name is %s, and I am %.1f :) - Woof!\n", gDog->name, gDog->age);
-	return (0);
+	if (d == NULL)
+		return;
+	if (d->name != NULL)
+		free(d->name);
+	if (d->owner != NULL)
+		free(d->owner);
+	free(d);
 }
+
