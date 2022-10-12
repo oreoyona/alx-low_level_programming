@@ -1,0 +1,15 @@
+#include "3-calc.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+/**
+ * main - the main func
+ * @argc: an int
+ * @argv: an array
+ * Return: an int
+ */
+int main(int argc, char[] *argc)
+{
+	int (*d)(int, int);
+
+	if (
