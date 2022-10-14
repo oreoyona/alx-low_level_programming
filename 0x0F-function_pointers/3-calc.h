@@ -3,7 +3,6 @@
 
 /**
  * struct op - Struct op
- *
  * @op: 1st arg
  * @f: 2nd arg
  */
