@@ -1,0 +1,4 @@
+#!/binh/bash
+git add .
+git commmit -m "Hot fix"
+git push
