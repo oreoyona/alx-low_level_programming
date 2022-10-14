@@ -1,4 +1,5 @@
 #!/bin/bash
+echo $1
 git add .
-git commit -m "Hot fix"
+git commit -m $1
 git push
