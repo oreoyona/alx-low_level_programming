@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- * print_all - prints anything
- * @format: list of types of arguments passed to the function
+ * print_all - prints anythingwe give it
+ * @format: types of arguments
  */
 void print_all(const char * const format, ...)
 {
