@@ -10,8 +10,8 @@
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list x;
-	int y;
-	unsigned int z = 0;
+	unsigned int y;
+	int z = 0;
 
 	if (n == 0)
 		return (0);
