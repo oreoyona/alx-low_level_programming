@@ -1,0 +1,5 @@
+#!/bin/bash
+MES="$@"
+git add .
+git commit -m "$MES"
+git push
