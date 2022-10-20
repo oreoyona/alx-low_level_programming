@@ -1,6 +1,6 @@
 #include "lists.h"
 #include <string.h>
-
+#include <stdlib.h>
 /**
  * add_node - adds a node as the head of linked list
  * @head: pointer that points to the head of ll
