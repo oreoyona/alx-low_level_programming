@@ -16,6 +16,7 @@ size_t print_list(const list_t *h)
 		printf("%s\n", "[0] (nil)");
 	while (head)
 	{
+		printf("%s\n", head->str);
 		x++;
 		head = runner;
 	}
