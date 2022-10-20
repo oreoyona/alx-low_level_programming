@@ -18,6 +18,7 @@ size_t print_list(const list_t *h)
 		else
 			printf("%s\n", h->str);
 		h = h->next;
+		x++;
 	}
 	return (x);
 }
