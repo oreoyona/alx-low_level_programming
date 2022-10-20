@@ -1,5 +1,7 @@
 #ifndef __LISTS_H__
 #define __LISTS_H__
+#include <stddef.h>
+
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
@@ -15,7 +17,7 @@ typedef struct list_s
 	struct list_s *next;
 } list_t;
 
-_putchar(char c);
+int _putchar(char c);
 size_t print_list(const list_t *h);
 
 #endif
