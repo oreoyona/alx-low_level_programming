@@ -1,0 +1,23 @@
+#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+/**
+ * main - splits a string
+ * Return: 0
+ */
+int main(int ac, char **argv[])
+{
+	char str = "voici unenohrase-qui a besoind'etre format-tée. mais voyons";
+	const char *sep = " .-'";
+	char *token;
+
+	token = strtok(str, sep);
+
+	while (token != NULL)
+	{
+		printf("%s\n", token);
+		token = strtok(NULL, sep);
+	}
+	return (0);
+}
