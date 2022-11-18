@@ -1,24 +1,23 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * jack_bauer - prints hours 
- * Return: void. only prints the jack bauer hours
+ * jack_bauer - print every minute of the day
+ * Return: void
  */
 void jack_bauer(void)
 {
-	int x, y = 0;
 
-	for (x = 0; x < 24; x++)
+	int mins, hour, min;
+
+	for (mins = 0; mins < (60 * 24); mins++)
 	{
-		for (y = 0; y < 60; y++)
-		{
-			if ( x < 9 || y < 9)
-			{
-				_putchar(
-				_putchar('\n');
-			}
-			printf("%d:%d", x, y);
-			_putchar('\n');
-		}
+		hour = mins / 60;
+		min = mins % 60;
+		_putchar(48 + (hour / 10));
+		_putchar(48 + (hour % 10));
+		_putchar(':');
+		_putchar(48 + (min / 10));
+		_putchar(48 + (min % 10));
+		_putchar('\n');
 	}
 }
