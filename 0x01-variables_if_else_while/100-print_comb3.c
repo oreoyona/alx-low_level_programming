@@ -1,26 +1,27 @@
 #include <stdio.h>
 
 /**
- * main - prints the first 100 digits
- * Return: 0 uppon success and 1 otherwise
+ * main - prints all possible different combinations of two digits
+ * Return: ALways 0 (Success)
  */
 int main(void)
 {
-	int num1, num2;
-	
-	for (num1 = 0; num1 < 10; num1++)
+	int n, m;
+
+	for (n = 48; n <= 56; n++)
 	{
-		for (num2 = 0; num2 < 10; num2++)
+		for (m = 49; m <= 57; m++)
 		{
-			if((num1 % 10) != (num1 % 10) * 10 && (num2 % 10) != (num2 % 10) * 10)
+			if (m > n)
 			{
-				putchar((num1 % 10) + '0');
-				putchar((num2 % 10) + '0');
+				putchar(n);
+				putchar(m);
+				if (n != 56 || m != 57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
-			if (num1 == 9 && num2 == 9)
-				continue;
-			putchar(',');
-			putchar(' ');
 		}
 	}
 	putchar('\n');
