@@ -8,14 +8,6 @@
 char *_strcpy(char *dest, char *src)
 {
 	int i;
-	int x;
-
-	x = 0;
-	while(src)
-	{
-		x++;
-	}
-	dest = malloc(x * sizeof(char));
 
 	i = 0;
 	while(src)
@@ -23,7 +15,6 @@ char *_strcpy(char *dest, char *src)
 		dest[i] = src[i];
 		i++;
 	}
-	dest[i] = src[i];
-	free(dest);
+	dest[i] = '\0';
 	return (dest);
 }
