@@ -10,11 +10,15 @@ char *_strcpy(char *dest, char *src)
 	int i;
 	int x;
 
-	for (i = 0; src[i] != 0; i++)
+	dest = (char *)malloc((sizeof(src)/sizeof(src[0]) * sizeof(char)));
+
+	i = 0;
+	while(src)
 	{
 		dest[i] = src[i];
-		x++;
-		dest[x++] = '\0';
+		i++;
 	}
+	dest[i] = src[i];
+	free(dest);
 	return (dest);
 }
