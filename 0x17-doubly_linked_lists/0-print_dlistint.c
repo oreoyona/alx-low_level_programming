@@ -12,4 +12,5 @@ size_t print_dlistint(const dlistint_t *h)
 		x++;
 		runner = h->next;
 	}
+	return (x);
 }
