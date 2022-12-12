@@ -1,9 +1,7 @@
 #include "lists.h"
-
 /**
  * add_dnodeint_end - adds a new node at the end
- * of a dlistint_t list
- *
+ * of a dll
  * @head: head of the list
  * @n: value of the element
  * Return: the address of the new element
@@ -11,14 +9,14 @@
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *h;
-	dlistint_t *new;
+	dlistint_t *new_node;
 
-	new = malloc(sizeof(dlistint_t));
-	if (new == NULL)
+	new_node = malloc(sizeof(dlistint_t));
+	if (new_node == NULL)
 		return (NULL);
 
-	new->n = n;
-	new->next = NULL;
+	new_node->n = n;
+	new_node->next = NULL;
 
 	h = *head;
 
@@ -26,14 +24,14 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	{
 		while (h->next != NULL)
 			h = h->next;
-		h->next = new;
+		h->next = new_node;
 	}
 	else
 	{
-		*head = new;
+		*head = new_node;
 	}
 
-	new->prev = h;
+	new_node->prev = h;
 
-	return (new);
+	return (new_node);
 }
