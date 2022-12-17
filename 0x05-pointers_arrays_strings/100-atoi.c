@@ -1,5 +1,20 @@
 #include "main.h"
 /**
+ * _isdigit - verify if a char is a digit
+ * @c: a char
+ * Return: 0 if c is a digit
+ * -1 otherwise
+ */
+int _isdigit(char c)
+	
+{
+	int x = 0;
+	
+	if (c < '0' || c > '9')
+		x = -1;
+	return (x);	
+}
+/**
  *_atoi - mimics the atoi function of stdlib
  * @s: the string
  * Return: an int version of the string
@@ -17,13 +32,18 @@ int _atoi(char *s)
 			sign = -1;
 			i++;
 		}
-		if (s[i] == '+')
+		else if (s[i] == '+')
 		{
 			i++;
+			sign = 1;
 		}
-		if ((s[i] + '0') < 48 || (s[i] + '0') > 57)
-			return (0);
-		x = x * 10 + s[i] - '0';
+		else if (_isdigit(s[i] == -1))
+		{
+			sign = 0;
+			i++;
+		}
+		else
+			x = x * 10 + s[i] - '0';
 	}
 	return (sign * x);
 }
