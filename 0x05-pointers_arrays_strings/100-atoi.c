@@ -17,6 +17,10 @@ int _atoi(char *s)
 			sign = -1;
 			i++;
 		}
+		if (s[i] == '+')
+		{
+			i++;
+		}
 		if (s[i] < 48 || s[i] > 57)
 			return (0);
 		else
