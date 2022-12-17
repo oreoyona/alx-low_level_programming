@@ -37,7 +37,7 @@ int _atoi(char *s)
 			i++;
 			sign = 1;
 		}
-		else if (_isdigit(s[i] == -1))
+		else if (_isdigit(s[i]) == -1)
 		{
 			sign = 0;
 			i++;
