@@ -30,17 +30,17 @@ int _atoi(char *s)
 		if (s[i] == '-')
 		{
 			sign = -1;
-			i++;
+			i = i + 1;
 		}
 		else if (s[i] == '+')
 		{
-			i++;
+			i = i + 1;
 			sign = 1;
 		}
 		else if (_isdigit(s[i]) == -1)
 		{
 			sign = 0;
-			i++;
+			i = i + 1;
 		}
 		x = x * 10 + s[i] - '0';
 	}
