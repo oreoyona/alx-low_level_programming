@@ -1,5 +1,5 @@
 #include "main.h"
-0;276;0c/**
+/**
  *_atoi - mimics the atoi function of stdlib
  * @s: the string
  * Return: an int version of the string
