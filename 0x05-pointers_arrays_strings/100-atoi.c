@@ -42,8 +42,7 @@ int _atoi(char *s)
 			sign = 0;
 			i++;
 		}
-		else
-			x = x * 10 + s[i] - '0';
+		x = x * 10 + s[i] - '0';
 	}
 	return (sign * x);
 }
