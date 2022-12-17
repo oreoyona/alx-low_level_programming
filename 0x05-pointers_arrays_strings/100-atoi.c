@@ -1,5 +1,5 @@
 #include "main.h"
-/**
+0;276;0c/**
  *_atoi - mimics the atoi function of stdlib
  * @s: the string
  * Return: an int version of the string
@@ -19,7 +19,10 @@ int _atoi(char *s)
 		}
 		if (s[i] < 48 || s[i] > 57)
 			return (0);
-		x = x * 10 + s[i] - '0';
+		else
+		{
+			x = x * 10 + s[i] - '0';
+		}
 	}
 	return (sign * x);
 }
