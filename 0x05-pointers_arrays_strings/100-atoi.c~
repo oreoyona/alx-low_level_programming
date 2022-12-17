@@ -1,0 +1,9 @@
+#include "main.h"
+/**
+ *_atoi - mimics the atoi function of stdlib
+ * @s: the string
+ * Return: an int version of the string
+ */
+int _atoi(char *s)
+{
+	
