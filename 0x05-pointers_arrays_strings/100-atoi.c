@@ -16,7 +16,7 @@ int _atoi(char *s)
 			sign = -1;
 		else if (s[i] < 48 || s[i] > 57)
 			return (0);
-		x = x * 10 + s[i] + '0';
+		x = x * 10 + s[i] - '0';
 	}
 	return (sign * x);
 }
