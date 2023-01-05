@@ -1,5 +1,4 @@
 #include "hash_tables.h"
-#define MAX_SIZE 21474836
 /**
  * hash_table_create - initializes a hashtable
  * with the specified size
@@ -9,13 +8,19 @@
 hash_table_t *hash_table_create(unsigned long int size)
 {
 	unsigned long int i;
-	hash_table_t *ht[MAX_SIZE];
+	hash_table_t *ht;
 
+	ht = malloc(sizeof(*ht));
 	if (ht == NULL)
 		return (NULL);
-	for (i = 0; i < size; i++)
+	ht->size = size;
+	ht->array = malloc(size * sizeof(hash_node_t *));
+	if (ht->array == NULL)
 	{
-		ht[i] = NULL;
+		free(ht);
+		return (NULL);
 	}
-	return (*ht);
+	for (i = 0; i < size; i++)
+		ht->array[i] = NULL;
+	return (ht);
 }
