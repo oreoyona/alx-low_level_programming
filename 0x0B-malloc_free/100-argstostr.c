@@ -31,7 +31,7 @@ char *argstostr(int ac, char **av)
 		len++;
 	}
 	/* having the size of our string, let's build the pointer */
-	str = malloc((sizeof(*av) * len) + 1);
+	str = malloc((sizeof(char) * len) + 1);
 	if (str == NULL)
 		return (NULL);
 	for (i1 = 0; i1 < ac; i1++)
