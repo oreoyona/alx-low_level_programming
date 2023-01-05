@@ -16,7 +16,7 @@ char *argstostr(int ac, char **av)
 	/*len for the length of our string and i are iterators*/
 	len = 0;
 	i1 = 0;
-	i2 = 0;
+	i3 = 0;
 
 	if (ac <= 1 || av == NULL)
 		return (NULL);
