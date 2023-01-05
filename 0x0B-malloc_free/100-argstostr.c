@@ -22,9 +22,9 @@ char *argstostr(int ac, char **av)
 	if (ac <= 1 || av == NULL)
 		return (NULL);
 	/*let us find the length of our args*/
-	for(; i1 < ac; i1++)
+	for (; i1 < ac; i1++)
 	{
-		for(i2 = 0; av[i1][i2] != '\0'; len++, i2++)
+		for (i2 = 0; av[i1][i2] != '\0'; len++, i2++)
 		{
 		}
 		len++;
@@ -44,4 +44,3 @@ char *argstostr(int ac, char **av)
 	str[i3] = '\0';
 	return (str);
 }
-	
