@@ -24,8 +24,9 @@ char *argstostr(int ac, char **av)
 	/*let us find the length of our args*/
 	for (; i1 < ac; i1++)
 	{
-		for (i2 = 0; av[i1][i2] != '\0'; len++, i2++)
+		for (i2 = 0; av[i1][i2] != '\0'; i2++)
 		{
+			len++;
 		}
 		len++;
 	}
@@ -33,13 +34,15 @@ char *argstostr(int ac, char **av)
 	str = malloc((sizeof(*av) * len) + 1);
 	if (str == NULL)
 		return (NULL);
-	for (i1 = 0; i1 < ac; i1++, i3++)
+	for (i1 = 0; i1 < ac; i1++)
 	{
 		for (i2 = 0; av[i1][i2] != '\0'; i2++)
 		{
 			str[i3] = av[i1][i2];
+			i3++;
 		}
 		str[i3] = '\n';
+		i3++;
 	}
 	str[i3] = '\0';
 	return (str);
