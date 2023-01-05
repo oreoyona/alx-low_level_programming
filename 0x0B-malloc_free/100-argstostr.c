@@ -18,31 +18,35 @@ char *argstostr(int ac, char **av)
 	i1 = 0;
 	i2 = 0;
 
-	/*let us handle the first exception*/
 	if (ac <= 1 || av == NULL)
 		return (NULL);
-	/*let us find the length of our args*/
-	for (; i1 < ac; i1++)
+	while (i1 < ac)
 	{
-		for (i2 = 0; av[i1][i2] != '\0'; i2++)
+		i2 = 0;
+		while (av[i1][i2])
 		{
 			len++;
+			i2++;
 		}
 		len++;
+		i2++;
 	}
-	/* having the size of our string, let's build the pointer */
 	str = malloc((sizeof(char) * len) + 1);
 	if (str == NULL)
 		return (NULL);
-	for (i1 = 0; i1 < ac; i1++)
+	i1 = 0;
+	while (i1 < ac)
 	{
-		for (i2 = 0; av[i1][i2] != '\0'; i2++)
+		i2 = 0;
+		while (av[i1][i2])
 		{
 			str[i3] = av[i1][i2];
+			i2++;
 			i3++;
 		}
 		str[i3] = '\n';
 		i3++;
+		i1++;
 	}
 	str[i3] = '\0';
 	return (str);
