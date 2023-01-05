@@ -18,7 +18,7 @@ char *argstostr(int ac, char **av)
 	i1 = 0;
 	i3 = 0;
 
-	if (ac <= 1 || av == NULL)
+	if (ac = 0 || av == NULL)
 		return (NULL);
 	while (i1 < ac)
 	{
