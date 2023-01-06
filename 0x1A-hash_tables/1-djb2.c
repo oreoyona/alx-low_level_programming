@@ -1,8 +1,8 @@
 #include "hash_tables.h"
 
 /**
- * unsigned long int hash_djb2 - creates a hash function
- *@str: the string we will work with
+ * hash_djb2 - creates a hash function
+ * @str: the string we will work with
  * Return: a hash_code
  */
 unsigned long int hash_djb2(const unsigned char *str)
