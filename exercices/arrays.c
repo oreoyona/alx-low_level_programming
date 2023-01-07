@@ -7,18 +7,23 @@
  */
 int main()
 {
-	int t[3][4];
+	char t[7][7];
 	int i;
 	int j;
+	
+	char *days[7] = {"Lundi", "Mardi", "Mercredi", "samedi", "dimanche"};
+	char *temp[7] = {"33", "27", "30", "19", "31", "27", "34"};
 
-	for (i = 0; i < 3; i++)
+	for (i = 0; i < 7; i++)
 	{
-		for (j = 0; j < 4; j++)
-			t[i][j] = j;
+		t[i] = days[i];
+		
+		for (j = 0; j < 7; j++)
+			t[i][j] = temp[j];
 	}
-	for (i = 0; i < 3; i++)
+	for (i = 0; i < 7; i++)
         {
-                for (j = 0; j < 4; j++)
+                for (j = 0; j < 7; j++)
                         printf("t[%d][%d]: [%d]\n", i, j, t[i][j]);
         }
 	return (TRUE);
