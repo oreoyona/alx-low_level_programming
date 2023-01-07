@@ -15,7 +15,7 @@ int main()
 	{
 		printf("%s", days[i]);
 		for (j = 0; j < 1; j++)
-			printf(": %d, %d\n", temp[i][j], temp[i][j + 1]);
+			printf(": <MIN: %d°c, MAX: %d°c>\n", temp[i][j], temp[i][j + 1]);
 	}
 	return (TRUE);
 }

@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define D_SIZE 3
+/**
+ * person - object to built a person
+ * @name: name
+ * @age: the age
+ * @f: favorites things
+ */
+typedef struct person{
+	char *name;
+	int age;
+	char f[D_SIZE];
+}person;
+
+/**
+ * p_node - ll of persons
+ * @id: id of the person
+ * @content: value
+ * @next: the next person in the list
+ */
+typedef struct p_node{
+	int id;
+	person content;
+	person next;
+}pnt;
+
+/**
+ * main - entry point of the program
+ * Return: void
+ */
+int main()
+{
+	int i;
+	pnt runner;
+	person gloire = {"Gloire", 26,["movies", "food", "books"]};
+	person meghan = {"Meghan",41,["H", "Archie", "Lili"]};
+	person harry = {"Henry",38,["F", "Army", "Duty"]};
+	pnt h = {1,gloire,NULL};
+	pnt h1 = {0,meghan, h};
+	pnt h2 = {2, harry, h1};
+	runner = h1;
+
+	while(runner != NULL)
+	{
+		printf("[%s->id:%d]\n", runner->content->name, runner->id);
+		runner = runner->next;
+		i++;
+	}
+	printf("Nombre de noeuds:%d\n", i);
+	return (0);
+}
