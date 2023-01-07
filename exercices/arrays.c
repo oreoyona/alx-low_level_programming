@@ -16,15 +16,12 @@ int main()
 
 	for (i = 0; i < 7; i++)
 	{
-		t[i] = days[i];
-		
-		for (j = 0; j < 7; j++)
-			t[i][j] = temp[j];
+		t[i][0] = days[i];
 	}
 	for (i = 0; i < 7; i++)
         {
                 for (j = 0; j < 7; j++)
-                        printf("t[%d][%d]: [%d]\n", i, j, t[i][j]);
+                        printf("t[%v][%c]: [%c]\n", i, j, t[i][j]);
         }
 	return (TRUE);
 }
