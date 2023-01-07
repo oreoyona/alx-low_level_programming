@@ -17,11 +17,13 @@ int main()
 	for (i = 0; i < 7; i++)
 	{
 		t[i][0] = days[i];
+		for (j = 0; j < 7; j++)
+			t[i][j] = temp[j];
 	}
 	for (i = 0; i < 7; i++)
         {
                 for (j = 0; j < 7; j++)
-                        printf("t[%v][%c]: [%c]\n", i, j, t[i][j]);
+                        printf("t[%d][%d]: [%s]\n", i, j, t[i][j]);
         }
 	return (TRUE);
 }
