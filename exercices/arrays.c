@@ -7,7 +7,7 @@
  */
 int main()
 {
-	char t[7][7];
+	char *t[7][7];
 	int i;
 	int j;
 	
