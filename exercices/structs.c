@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define TRUE 3
-#define D_SIZE 3
+#define TRUE 0
+#define D_SIZE 5
 /**
  * person - object to built a person
  * @name: name
@@ -10,9 +10,9 @@
  * @f: favorites things
  */
 typedef struct person{
-	char *name;
+	char name[D_SIZE];
 	int age;
-	char *f;
+	char f[D_SIZE];
 }person;
 
 /**
@@ -23,7 +23,7 @@ typedef struct person{
  */
 typedef struct p_node{
 	int id;
-	person *content;
+	person content;
 	struct p_node *next;
 }p_node;
 /**
@@ -50,12 +50,11 @@ int gen(char *str)
  */
 p_node *init(person *ob)
 {
-	p_node *head;
+	p_node *head = malloc(sizeof(p_node*));
 	
 	if(!ob)
 		return (NULL);
-	head->id = gen(ob->name);
-	head->content = NULL;
+	head->id = gen("gloire");
 	head->next = NULL;
 	
 	return (head);
@@ -69,9 +68,10 @@ int main()
 	person *gloire;
 	p_node *head;
 
-	gloire->name="Gloir";
+	gloire = malloc(sizeof(person *));;
+	memcpy(gloire->name, "Gloir", 5);
 	gloire->age=26;
-	gloire->f = "A B C ";
+	memcpy(gloire->f, "ABCD ", 5);
 	head = init(gloire);
 	if (head) printf("Success\n");
 	else printf("Failed\n");
