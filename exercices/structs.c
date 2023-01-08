@@ -22,7 +22,7 @@ typedef struct person{
 typedef struct p_node{
 	int id;
 	person content;
-	person next;
+	p_node *next;
 }pnt;
 
 /**
@@ -32,13 +32,29 @@ typedef struct p_node{
 int main()
 {
 	int i;
-	pnt runner;
-	person gloire = {name="Gloire", age=26, f=["movies", "food", "books"]};
-	person meghan = {name="Meghan", age=41, f=["H", "Archie", "Lili"]};
-	person harry = {name="Henry",age=38, f=["F", "Army", "Duty"]};
-	pnt h = {id=1,content=gloire, next=NULL};
-	pnt h1 = {id=0, content=meghan, next=h};
-	pnt h2 = {id=2, conent=harry, next=h1};
+	pnt *h, *h1, *runner;
+	person *gloire, *meghan;
+	gloire->name = "Gloir";
+	gloire->age = 26;
+	gloire->f[0] = "A";
+	gloire->f[1] = "B";
+	gloire->f[2] = "C";
+
+	meghan->name = "Megha";
+	meghan->age = 41;
+	meghan->f[0] = "D";
+	meghan->f[1] = "E";
+	meghan->f[2] = "F";
+	
+
+	h->id = 1;
+	h->content = *gloire;
+	h->next = NULL;
+
+	h1->id = 2;
+	h1->content = *meghan;
+	h1->next = h;
+	
 	runner = h1;
 
 	while(runner != NULL)
